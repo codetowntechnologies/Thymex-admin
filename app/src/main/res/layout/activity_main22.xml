@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity22">
+
+
+
+
+        <include
+            layout="@layout/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/appbar1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment1"
+
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout="@layout/activity_main">
+
+        </androidx.fragment.app.FragmentContainerView>
+
+
+<TextView
+    android:id="@+id/datefield"
+    android:layout_width="300sp"
+    android:layout_marginTop="100sp"
+    android:text="All History"
+    android:textColor="@android:color/black"
+    android:textStyle="bold"
+    android:padding="15sp"
+    android:textSize="17sp"
+    android:background="@drawable/buttonround2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_height="wrap_content"/>
+
+<ImageView
+    android:id="@+id/selectdate"
+    android:layout_width="wrap_content"
+    android:src="@drawable/arrow"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="110sp"
+    android:rotation="-90"
+    android:layout_marginStart="230sp"
+    android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ref"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="24sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/place"
+        android:clickable="true"
+        app:maxImageSize="34sp"
+        app:backgroundTint="#ffffff"
+        android:contentDescription="@string/maps"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_refresh_24"
+
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintTop_toBottomOf="@+id/appbar1"
+        app:layout_constraintEnd_toEndOf="@+id/fragment1"
+
+        tools:ignore="MissingConstraints,UnknownId" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

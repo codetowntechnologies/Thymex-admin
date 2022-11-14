@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+
+    >
+ 
+
+    <item android:title="COURIERS-Section"
+        android:enabled="true"
+        android:id="@+id/thisdevice"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/bike"/>
+    <item android:title="My Location"
+        android:enabled="true"
+        android:id="@+id/myloc"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/location"/>
+    <item android:title="Instructions"
+        android:enabled="true"
+        android:id="@+id/anotherphone"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ins"/>
+
+
+
+
+</menu>
